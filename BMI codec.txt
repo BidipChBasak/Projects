@@ -1,0 +1,85 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+float h,w,BMI;
+printf("Enter your height in centimeters:");
+scanf("%f",&h);
+printf("Enter your weight in kg:");
+scanf("%f",&w);
+h=h/100;   //To covert it into meter
+BMI=w/(h*h);
+printf("Your Body Mass Index Is: %0.2f \n", BMI);
+if(BMI>0)
+ if(BMI<=16)
+  {
+  printf("\nYou are severly underweight(emaciation).\n");
+
+  printf("\nHEALTH RISKS:\n");
+  printf("Malnutrition, hair loss, skin and teeth problems, anemia, irregular periods and infertility(for women), lack of growth, osteoporosis.\n");
+
+  printf("\nSOLUTIONS TO MAINTAIN BMI:\n");
+  printf("1. Eat more frequently to gain a lot mass(comsume right calories of food).\n");
+  printf("2. Maintain a nutritious diet.\n");
+  printf("3. Drink smoothies and shakes.\n");
+  printf("4. Drink water frequently 3-4 litres per day.\n");
+  printf("5. Add proper percentage of macro-nutrients to your diet(proteins,fats & carbs).\n");
+  }
+
+
+  else if(BMI<=18.5)
+  {
+  printf("\nYou are underweight.\n");
+
+  printf("\nHEALTH RISKS:\n");
+  printf("Malnutrition, hair loss, anemia, irregular periods and infertility(for women), lack of growth, osteoporosis, surgical complications, low imunity.\n");
+
+  printf("\nSOLUTIONS TO MAINTAIN BMI:\n");
+  printf("1. Exercise.\n");
+  printf("2. Add healthy calories to your diet.\n");
+  printf("3. Drink smoothies and shakes.\n");
+  printf("4. Drink water frequently 3-4 litres per day.\n");
+  printf("5. Eat plenty of proteins.\n");
+  }
+
+
+  else if(BMI<=25)
+  {
+  printf("\nYou are healthy/normal.\n");
+  }
+
+
+  else if(BMI<=30)
+  {
+  printf("\nYou are overweight.\n");
+
+  printf("\nHEALTH RISKS:\n");
+  printf("High blood pressure, type-2 diabetes, breathing problems, cholesterol issues, depression and anxiety.\n");
+
+  printf("\nSOLUTIONS TO MAINTAIN BMI:\n");
+  printf("1. Have a healthy eating plan.\n");
+  printf("2. Exercise daily.\n");
+  printf("3. Make a goal and stick to it(walking daily).\n");
+  printf("4. Drink water frequently per day.\n");
+  printf("5. Do not eat foods which have high quantity of oils,fats, and proteins.\n");
+  }
+
+
+  else
+  {
+  printf("\nYou are severly overweight(obesity).\n");
+
+  printf("\nHEALTH RISKS:\n");
+  printf("High blood pressure, risk of heart attack, arthritis problem, metabolic failures, hormonal impairments, diabetes, breathing problems, cholesterol issues, depression and anxiety.\n");
+
+  printf("\nSOLUTIONS TO MAINTAIN BMI:\n");
+  printf("1. Be as physically active as possible(exercises, cardio,walking and runing on a regular basis).\n");
+  printf("2. Stay hydrated with water and avoid drinks with added sugar.\n");
+  printf("3. Keep a track of what you eat.\n");
+  printf("4. Limit portion size to control calorie intake.\n");
+  printf("5. Consult a therapist if needed.\n");
+  printf("6. Under the consultant of doctor weight-loss medicines can be taken.\n");
+  }
+
+   getch();
+  }
